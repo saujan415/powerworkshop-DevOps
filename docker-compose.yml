@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web:
+    image: saujan12/php-hello-world
+    ports:
+      - "8080:80"

@@ -1,35 +1,35 @@
-# php-hello-world
-A simple hello-world for composer
-
- [![Latest Stable Version](https://github.com/silarhi/php-hello-world/workflows/Tests/badge.svg)](https://github.com/silarhi/php-hello-world/workflows/Tests/badge.svg)
- [![Latest Stable Version](https://poser.pugx.org/silarhi/hello-world/v/stable)](https://packagist.org/packages/silarhi/hello-world)
-[![Total Downloads](https://poser.pugx.org/silarhi/hello-world/downloads)](https://packagist.org/packages/silarhi/hello-world)
-[![License](https://poser.pugx.org/silarhi/hello-world/license)](https://packagist.org/packages/silarhi/hello-world)
-
-
-[![SymfonyInsight](https://insight.symfony.com/projects/5d582202-1186-4ce7-82c7-c4d3a2c11807/big.svg)](https://insight.symfony.com/projects/5d582202-1186-4ce7-82c7-c4d3a2c11807)
-
 Installation
 ------------
-
-Install with composer
-``` bash
-composer require silarhi/hello-world
+## Docker
+```bash
+  sudo apt install docker.io
+  sudo systemctl status docker
+  sudo apt update
 ```
 
-Run composer update
-``` bash
-composer update silarhi/hello-world
+## Clone git
+```bash
+  git clone https://github.com/silarhi/php-hello-world.git
+cd php-hello-world
 ```
 
-Usage
------
+### Create docker file in php-hello-world
 
-``` php
-require_once __DIR__ . '/vendor/autoload.php';
-
-use Silarhi\Hello;
-
-$hello = new Hello();
-echo $hello->display() . "\n";
+## Build Docker Image
+```bash
+    docker build -t saujan12/php-hello-world .
 ```
+
+### Create docker-compose.yml file
+
+## Push in Github
+```bash
+    git init
+git add .
+git commit -m "Initial commit with Dockerfile and docker-compose.yml" 
+git branch -M main 
+git remote add origin https://github.com/saujan415/powerworkshop-DevOps.git
+git push -u origin main
+```
+#### Create you PAT in git and use as password for your github login
+    
